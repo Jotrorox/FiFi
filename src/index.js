@@ -27,7 +27,7 @@ for (const file of commandFiles) {
     } else {
         console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
     }
-	}
+}
 
 client.once(Events.ClientReady, readyClient => {
     console.log(`The bot is now ready and logged in as ${readyClient.user.username}`);

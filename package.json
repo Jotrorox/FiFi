@@ -4,6 +4,7 @@
   "description": "A simple discord bot to play some LoFi",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
