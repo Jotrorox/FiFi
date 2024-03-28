@@ -17,7 +17,7 @@ module.exports = {
             // Disconnect the bot from all voice channels
             voiceConnections.forEach(state => {
                 const connection = getVoiceConnection(guild.id, state.channelId);
-                if (connection) connection.destroy();
+                if (connection) connection.disconnect();
             });
 
             await interaction.reply('Disconnected from all voice channels.');
