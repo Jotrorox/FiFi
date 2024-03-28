@@ -1,4 +1,5 @@
 const { Client, GatewayIntentBits, Events, Collection, REST, Routes } = require('discord.js');
+const { getVoiceConnection } = require('@discordjs/voice');
 const fs = require('node:fs');
 const path = require('node:path');
 const dotenv = require('dotenv');
@@ -54,18 +55,6 @@ client.on(Events.InteractionCreate, async interaction => {
 			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 		}
 	}
-});
-
-client.on(Events.VoiceStateUpdate, (oldState, newState) => {
-    // Check if the member is leaving a voice channel
-    if (oldState.channel && !newState.channel) {
-        const voiceChannel = oldState.channel;
-        // Check if the bot is the only member left in the voice channel
-        if (voiceChannel.members.size <= 1) {
-            // The bot is the only member left, so it leaves the voice channel
-            voiceChannel.leave();
-        }
-    }
 });
 
 client.login(process.env.DISCORD_TOKEN);
