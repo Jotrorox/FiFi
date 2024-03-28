@@ -1,0 +1,4 @@
+node_modules
+rsc
+package-lock.json
+.env

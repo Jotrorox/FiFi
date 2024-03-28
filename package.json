@@ -1,0 +1,33 @@
+{
+  "name": "lofi_bot",
+  "version": "0.1.0",
+  "description": "A simple discord bot to play some LoFi",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jotrorox/lofi_bot.git"
+  },
+  "keywords": [
+    "discord",
+    "music",
+    "music-bot",
+    "bot",
+    "discord-bot"
+  ],
+  "author": "Johannes (Jotrorox)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jotrorox/lofi_bot/issues"
+  },
+  "homepage": "https://github.com/Jotrorox/lofi_bot#readme",
+  "dependencies": {
+    "@discordjs/voice": "^0.16.1",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "libsodium-wrappers": "^0.7.13",
+    "nodemon": "^3.1.0"
+  }
+}
