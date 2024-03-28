@@ -24,22 +24,55 @@ module.exports = {
     
         const player = createAudioPlayer();
         connection.subscribe(player);
-    
-        const resource = createAudioResource(fs.createReadStream('./rsc/empty-mind-118973.mp3'), {
-            inputType: StreamType.Arbitrary,
+
+        const directoryPath = './rsc/';
+        const music_files = [];
+        
+        fs.readdir(directoryPath, (err, files) => {
+            if (err) {
+                console.error('Error reading directory:', err);
+                return;
+            }
+            
+            music_files.push(...files);
+            const music_path = directoryPath + music_files[Math.floor(Math.random() * music_files.length)];
+            console.log("Random music path:", music_path);
+
+            const resource = createAudioResource(fs.createReadStream(music_path), {
+                inputType: StreamType.Arbitrary,
+            });
+        
+            player.play(resource);
         });
-    
-        player.play(resource);
-    
+
         player.on('error', error => {
             console.error('Error:', error);
         });
     
         player.on('idle', () => {
-            connection.destroy();
+            const directoryPath = './rsc/';
+            const music_files = [];
+            
+            fs.readdir(directoryPath, (err, files) => {
+                if (err) {
+                    console.error('Error reading directory:', err);
+                    return;
+                }
+                
+                music_files.push(...files);
+                const music_path = directoryPath + music_files[Math.floor(Math.random() * music_files.length)];
+                console.log("Random music path:", music_path);
+
+                const resource = createAudioResource(fs.createReadStream(music_path), {
+                    inputType: StreamType.Arbitrary,
+                });
+            
+                player.play(resource);
+            });
         });
     
         const embed = new EmbedBuilder()
+            .setColor(Colors.Purple)
 			.setTitle("Playing!")
 			.setDescription("The bot successfully joined your vc and should've started playing LoFi. If that is not the case please contact @jotrorox.");
 

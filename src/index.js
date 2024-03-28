@@ -34,10 +34,6 @@ client.once(Events.ClientReady, readyClient => {
     registerCommands();
 });
 
-client.on(Events.MessageCreate, async message => {
-    return;
-});
-
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
@@ -58,6 +54,18 @@ client.on(Events.InteractionCreate, async interaction => {
 			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 		}
 	}
+});
+
+client.on(Events.VoiceStateUpdate, (oldState, newState) => {
+    // Check if the member is leaving a voice channel
+    if (oldState.channel && !newState.channel) {
+        const voiceChannel = oldState.channel;
+        // Check if the bot is the only member left in the voice channel
+        if (voiceChannel.members.size <= 1) {
+            // The bot is the only member left, so it leaves the voice channel
+            voiceChannel.leave();
+        }
+    }
 });
 
 client.login(process.env.DISCORD_TOKEN);
