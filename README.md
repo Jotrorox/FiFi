@@ -9,17 +9,13 @@
 <h1 align="center">Deki Helper</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Jotrorox/FiFi/?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Jotrorox/FiFi/?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Jotrorox/FiFi/?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/Jotrorox/FiFi/?color=56BEB8">
-
-  <img alt="Github issues" src="https://img.shields.io/github/issues/jotrorox/FiFi/?color=56BEB8" />
-
-  <img alt="Github stars" src="https://img.shields.io/github/stars/jotrorox/FiFi/?color=56BEB8" />
+  ![GitHub](https://img.shields.io/github/languages/top/jotrorox/fifi?style=flat-square)
+  ![GitHub](https://img.shields.io/github/languages/count/jotrorox/fifi?style=flat-square)
+  ![GitHub](https://img.shields.io/github/repo-size/jotrorox/fifi?style=flat-square)
+  ![GitHub](https://img.shields.io/github/license/jotrorox/fifi?style=flat-square)
+  ![GitHub](https://img.shields.io/github/issues/jotrorox/fifi?style=flat-square)
+  ![GitHub](https://img.shields.io/github/stars/jotrorox/fifi?style=flat-square)
 </p>
 
 <!-- Status -->
@@ -86,6 +82,9 @@ $ npm install
 $ mv .env.example .env
 $ nano .env
 
+# Add the Music
+# Put all the mp3 Files into the rsc folder
+
 # Run the project
 $ npm run dev
 ```
@@ -102,6 +101,9 @@ $ git clone https://github.com/Jotrorox/FiFi
 
 # Access
 $ cd FiFi
+
+# Add the Music
+# Put all the mp3 Files into the rsc folder
 
 # set the botToken
 $ mv .env.example .env
