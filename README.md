@@ -76,9 +76,10 @@ $ cd FiFi
 # Install dependencies
 $ npm install
 
-# Add the bot Token
-$ mv .env.example .env
-$ nano .env
+# Add the bot Token to env on Windows
+$ set DISCORD_TOKEN=<yourDiscordToken>
+# Add the bot Token to env on Linux/macOS
+$ export DISCORD_TOKEN=<yourDiscordToken>
 
 # Add the Music
 # Put all the mp3 Files into the rsc folder
@@ -90,25 +91,15 @@ $ npm run dev
 **If you encounter Problems just hit me up, I'm happy to help you get started**\
 **You can do that over matrix: @jotrorox:matrix.org or Discord: https://discord.gg/Z7ADkZ9H** 
 
-## :dash: Getting Started with Hosting ##
+## :dash: Getting Started with Docker ##
 
-I will explain the Docker way here so please ensure you have Docker and Docker-Compose installed!
+I will explain the Docker way here so please ensure you have Docker installed!
 ```bash
-# Clone this project
-$ git clone https://github.com/Jotrorox/FiFi
-
-# Access
-$ cd FiFi
-
-# Add the Music
-# Put all the mp3 Files into the rsc folder
-
-# set the botToken
-$ mv .env.example .env
-$ nano .env
+# Pull the project
+$ docker pull jotrorox/fifi
 
 # Start the bot
-$ docker compose up
+$ docker run -e DISCORD_TOKEN=<yourDiscordToken> jotrorox/fifi
 ```
 
 ## :memo: License ##
