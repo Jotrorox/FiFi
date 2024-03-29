@@ -36,7 +36,6 @@ module.exports = {
             
             music_files.push(...files);
             const music_path = directoryPath + music_files[Math.floor(Math.random() * music_files.length)];
-            console.log("Random music path:", music_path);
 
             const resource = createAudioResource(fs.createReadStream(music_path), {
                 inputType: StreamType.Arbitrary,
@@ -61,7 +60,6 @@ module.exports = {
                 
                 music_files.push(...files);
                 const music_path = directoryPath + music_files[Math.floor(Math.random() * music_files.length)];
-                console.log("Random music path:", music_path);
 
                 const resource = createAudioResource(fs.createReadStream(music_path), {
                     inputType: StreamType.Arbitrary,

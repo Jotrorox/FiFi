@@ -45,12 +45,11 @@ If you want to just use the bot, already hosted and configured click the <a href
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Slash Commands;\
-:heavy_check_mark: Playing local LoFi music;\
-:heavy_multiplication_x: Config using a toml file;\
-:heavy_multiplication_x: Streaming LoFi;\
-:heavy_multiplication_x: XP System;\
-:heavy_multiplication_x: Simpler Docker Deploy;
+:heavy_check_mark: Slash Commands\
+:heavy_check_mark: Playing local LoFi music\
+:heavy_multiplication_x: Streaming LoFi\
+:heavy_multiplication_x: XP System\
+:heavy_check_mark: Simpler Docker Deploy
 
 ## :rocket: Technologies ##
 
