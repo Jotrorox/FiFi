@@ -9,13 +9,12 @@
 <h1 align="center">Deki Helper</h1>
 
 <p align="center">
-
-  ![GitHub](https://img.shields.io/github/languages/top/jotrorox/fifi?style=flat-square)
-  ![GitHub](https://img.shields.io/github/languages/count/jotrorox/fifi?style=flat-square)
-  ![GitHub](https://img.shields.io/github/repo-size/jotrorox/fifi?style=flat-square)
-  ![GitHub](https://img.shields.io/github/license/jotrorox/fifi?style=flat-square)
-  ![GitHub](https://img.shields.io/github/issues/jotrorox/fifi?style=flat-square)
-  ![GitHub](https://img.shields.io/github/stars/jotrorox/fifi?style=flat-square)
+  <img src="https://img.shields.io/github/languages/top/jotrorox/fifi?style=flat-square" alt="GitHub Top Language Badge">
+  <img src="https://img.shields.io/github/languages/count/jotrorox/fifi?style=flat-square" alt="GitHub Language Count Badge">
+  <img src="https://img.shields.io/github/repo-size/jotrorox/fifi?style=flat-square" alt="GitHub Repository Size Badge">
+  <img src="https://img.shields.io/github/license/jotrorox/fifi?style=flat-square" alt="GitHub License Badge">
+  <img src="https://img.shields.io/github/issues/jotrorox/fifi?style=flat-square" alt="GitHub Issues Badge">
+  <img src="https://img.shields.io/github/stars/jotrorox/fifi?style=flat-square" alt="GitHub Stars Badge">
 </p>
 
 <!-- Status -->
