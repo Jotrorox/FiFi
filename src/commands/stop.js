@@ -10,19 +10,26 @@ module.exports = {
         // Get the guild from the interaction
         const guild = interaction.guild;
 
-        // Check if the bot is connected to any voice channels in the guild
-        const voiceConnections = guild.voiceStates.cache.filter(state => state.member.user.bot);
+        // Check if the bot is in a voice channel
+        const voiceConnection = getVoiceConnection(guild.id);
 
-        if (voiceConnections.size > 0) {
-            // Disconnect the bot from all voice channels
-            voiceConnections.forEach(state => {
-                const connection = getVoiceConnection(guild.id, state.channelId);
-                if (connection) connection.disconnect();
-            });
-
-            await interaction.reply('Disconnected from all voice channels.');
-        } else {
-            await interaction.reply('The bot is not connected to any voice channels.');
+        if (!voiceConnection) {
+            const embed = new EmbedBuilder()
+                .setTitle("Error!")
+                .setDescription("The bot is not in a voice channel!")
+                .setColor(Colors.Red);
+            await interaction.reply({ embeds: [embed], ephemeral: true });
+            return;
         }
+
+        // Leave the voice channel
+        voiceConnection.destroy();
+
+        const embed = new EmbedBuilder()
+            .setColor(Colors.Purple)
+            .setTitle("Stopped!")
+            .setDescription("The bot successfully stopped playing LoFi and left the voice channel.");
+
+        await interaction.reply({ embeds: [embed], ephemeral: true });
 	},
 };
