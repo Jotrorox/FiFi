@@ -1,10 +1,6 @@
 const { Client, GatewayIntentBits, Events, Collection, REST, Routes } = require('discord.js');
-const { getVoiceConnection } = require('@discordjs/voice');
 const fs = require('node:fs');
 const path = require('node:path');
-const dotenv = require('dotenv');
-
-dotenv.config();
 
 const client = new Client({
     intents: [
@@ -87,7 +83,7 @@ function registerCommands() {
     
             // The put method is used to fully refresh all commands in the guild with the current set
             const data = await rest.put(
-                Routes.applicationCommands(process.env.CLIENT_ID),
+                Routes.applicationCommands(client.user.id),
                 { body: commands },
             );
     
