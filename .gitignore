@@ -2,3 +2,4 @@ node_modules
 rsc
 package-lock.json
 .env
+set_env.sh
