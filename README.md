@@ -1,12 +1,4 @@
-<!--
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="FiFi" />
-
-  &#xa0;
-</div>
--->
-
-<h1 align="center">Deki Helper</h1>
+<h1 align="center">FiFi</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/jotrorox/fifi?style=flat-square" alt="GitHub Top Language Badge">
