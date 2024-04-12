@@ -24,6 +24,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#dash-getting-started">Getting Started</a> &#xa0; | &#xa0;
+    <a href="#tos">TOS</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/jotrorox" target="_blank">Author</a>
 </p>
@@ -34,6 +35,7 @@
 
 Just a simple Discord Bot that provides a simple music bot.\
 If you want to just use the bot, already hosted and configured click the <a href="https://discord.com/oauth2/authorize?client_id=1222674134744694885&permissions=36700160&scope=bot+applications.commands" target="_blank">Link</a>!
+If you use the Bot at all you agree to the <a href="#tos">TOS</a>.
 
 ## :sparkles: Features ##
 
@@ -92,6 +94,11 @@ $ docker pull jotrorox/fifi
 # Start the bot
 $ docker run -e DISCORD_TOKEN=<yourDiscordToken> jotrorox/fifi
 ```
+
+## TOS ##
+If you use this bot on your Server you agree to moderating, which songs are played and banning users accordingly, if the Played songs are against any of Discords TOS or Law policies.
+Neither the Developer nor the Hoster or Provider of the Bot are responsible if any forbidden things are played using this bot.
+The Discord Server Owner takes the full responsibility for all songs played using thing this song if they conflict with any TOS or policies.
 
 ## :memo: License ##
 
