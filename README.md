@@ -34,7 +34,7 @@
 ## :dart: About ##
 
 Just a simple Discord Bot that provides a simple music bot.\
-If you want to just use the bot, already hosted and configured click the <a href="https://discord.com/oauth2/authorize?client_id=1222674134744694885&permissions=36700160&scope=bot+applications.commands" target="_blank">Link</a>!
+If you want to just use the bot, already hosted and configured click the <a href="https://discord.com/oauth2/authorize?client_id=1222674134744694885&permissions=36700160&scope=bot+applications.commands" target="_blank">Link</a>!\
 If you use the Bot at all you agree to the <a href="#tos">TOS</a>.
 
 ## :sparkles: Features ##
