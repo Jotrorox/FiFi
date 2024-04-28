@@ -1,5 +1,5 @@
 {
-  "name": "lofi_bot",
+  "name": "fifi",
   "version": "0.1.0",
   "description": "A simple discord bot to play some LoFi",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jotrorox/lofi_bot.git"
+    "url": "git+https://github.com/Jotrorox/fifi.git"
   },
   "keywords": [
     "discord",
@@ -21,9 +21,9 @@
   "author": "Johannes (Jotrorox)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jotrorox/lofi_bot/issues"
+    "url": "https://github.com/Jotrorox/fifi/issues"
   },
-  "homepage": "https://github.com/Jotrorox/lofi_bot#readme",
+  "homepage": "https://github.com/Jotrorox/fifi#readme",
   "dependencies": {
     "@discordjs/voice": "^0.16.1",
     "discord.js": "^14.14.1",
