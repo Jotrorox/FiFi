@@ -24,7 +24,7 @@ jobs:
         run: docker build -t fifi .
 
       - name: Tag Docker image
-        run: docker tag rudolf jotrorox/fifi:latest
+        run: docker tag fifi jotrorox/fifi:latest
 
       - name: Push Docker image
         run: docker push jotrorox/fifi:latest
