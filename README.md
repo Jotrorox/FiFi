@@ -74,9 +74,6 @@ $ set DISCORD_TOKEN=<yourDiscordToken>
 # Add the bot Token to env on Linux/macOS
 $ export DISCORD_TOKEN=<yourDiscordToken>
 
-# Add the Music
-# Put all the mp3 Files into the rsc folder
-
 # Run the project
 $ npm run dev
 ```

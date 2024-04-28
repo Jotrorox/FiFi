@@ -7,5 +7,6 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
+    npm i
   '';
 }
