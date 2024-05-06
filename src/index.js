@@ -1,6 +1,8 @@
 const { Client, GatewayIntentBits, Events, Collection, REST, Routes } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
+const { handleLogin } = require('./handlers/loginHandler');
+const { handleGuildJoin} = require('./handlers/guildJoinHandler');
 
 const client = new Client({
     intents: [
@@ -54,7 +56,9 @@ client.on(Events.InteractionCreate, async interaction => {
 	}
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.on(Events.GuildCreate, guild => handleGuildJoin(guild));
+
+client.login(process.env.DISCORD_TOKEN).then(() => handleLogin(client));
 
 function registerCommands() {
     const commands = [];
